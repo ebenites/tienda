@@ -113,4 +113,21 @@ class ProductoDAO {
         
     }
     
+    public static function listarStockPorcategoria($categorias_id) {
+        
+        $sql = "SELECT nombre, stock FROM productos WHERE categorias_id=:categorias_id";
+        
+        $pdo = Conexion::getConexion();
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(':categorias_id', $categorias_id);
+        $stmt->execute();
+        
+        $lista = array();
+        while($object = $stmt->fetchObject('Producto')){
+            $lista[] = $object;
+        }
+        
+        return $lista;
+    }
+    
 }
