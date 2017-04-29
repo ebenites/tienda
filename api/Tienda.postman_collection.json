@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tienda2017",
+		"_postman_id": "0e5a9d34-d016-b20e-4f6f-14aa334b50eb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost/tienda/api/productos",
+			"request": {
+				"url": "localhost/tienda/api/productos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/tienda/api/productos/:id",
+			"request": {
+				"url": "localhost/tienda/api/productos/10",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"categorias_id\":\"1\",\"nombre\":\"Producto de prueba\",\"precio\":200.90,\"stock\":\"23\", \"descripcion\":\"Cualquier descripción\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/tienda/api/productos",
+			"request": {
+				"url": "localhost/tienda/api/productos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"categorias_id\":\"1\",\"nombre\":\"Producto de prueba\",\"precio\":200.90,\"stock\":\"23\", \"descripcion\":\"Cualquier descripción\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/tienda/api/productos/:id",
+			"request": {
+				"url": "localhost/tienda/api/productos/16",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"categorias_id\":\"1\",\"nombre\":\"Producto de prueba\",\"precio\":200.90,\"stock\":\"23\", \"descripcion\":\"Cualquier descripción\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/tienda/api/productos/:id",
+			"request": {
+				"url": "localhost/tienda/api/productos/16",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
