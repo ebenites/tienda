@@ -21,3 +21,12 @@
         <script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
         
         <script src="js/ckeditor/ckeditor.js" type="text/javascript"></script>
+        
+        <script src="js/spin.min.js" type="text/javascript"></script>
+        <script src="js/jquery.spin.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.form.min.js" type="text/javascript"></script>
+        
+        <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-datepicker-locales/bootstrap-datepicker.es.min.js" type="text/javascript"></script>
